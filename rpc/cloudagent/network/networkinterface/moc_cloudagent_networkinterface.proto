@@ -38,7 +38,7 @@ message IpConfiguration {
 	IPAllocationMethod allocation = 6;
 	string gateway = 7 [(sensitive) = true];
 	repeated InboundNatRule inboundNatRules = 8;
-	NetworkType networkType = 9;
+	NetworkType networkType = 9; // Read-only property
 }
 
 message NetworkInterface {
